@@ -1,0 +1,13 @@
+.listWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contactItem {
+width: 360px;
+border: 2px solid black;
+padding: 12px;
+border: 2px solid rgb(1, 83, 5);
+background-color: rgb(165, 180, 129);
+}

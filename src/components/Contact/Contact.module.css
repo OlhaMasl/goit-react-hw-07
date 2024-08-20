@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+}
+
+.contactData {
+ display: flex;
+ flex-direction: column;
+}
+
+.contactDataItem {
+display: flex;
+gap: 12px;
+}
+
+.icons {
+    color:#080808;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+}
+
+.contactEl {
+color: #080808;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+
+.deleteBtn {
+    padding: 12px;
+    background-color: rgb(233, 226, 133);
+}
