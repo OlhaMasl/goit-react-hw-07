@@ -53,3 +53,13 @@ img {
     text-transform: capitalize;
     margin-bottom: 24px;
 }
+
+.loading {
+    color: #244703;
+}
+.error {
+    margin: 0 auto;
+    font-size: 36px;
+    color: #244703;
+    text-align: center;
+}
