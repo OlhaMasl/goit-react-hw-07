@@ -1,8 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import Contact from "../Contact/Contact";
 import s from "./ContactList.module.css";
-import { selectContacts } from "../../redux/contactsSlice";
-import { selectFilter } from "../../redux/filtersSlice";
+import { selectFilteredContacts } from "../../redux/contactsSlice";
 import { useEffect } from "react";
 import { fetchContactsThunk } from "../../redux/contactsOps";
 
@@ -12,11 +11,7 @@ const ContactList = () => {
         dispatch(fetchContactsThunk())
     }, [dispatch]);
 
-    const contacts = useSelector(selectContacts);
-
-    const selectNameFilter = useSelector(selectFilter);
-
-    const filteredContacts = contacts.filter(item => item.name.toLowerCase().includes(selectNameFilter.toLowerCase()));
+    const filteredContacts = useSelector(selectFilteredContacts);
 
     return (
         <ul className={s.listWrapper }>
